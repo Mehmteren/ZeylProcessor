@@ -9,7 +9,13 @@ ZeylProcessor, sigorta şirketlerinin zeyil kayıtlarında alt grup numaralandı
   <img src="gif/gifvid1.gif" alt="ZeylProcessor Demo" width="800" style="border-radius: 10px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
 </p>
 
-<p align="center"><em>Drag & drop ile Excel yükleme, işleme ve indirme süreci</em></p>
+<p align="center"><em>Üzerinde işlem yapacağım excel alt grup zeyil nosunun boş olduğunu gösteriyorum, daha sonrasında bu excel işliyorum ve işledikten sonra alt grup zeyil nosu dolu güncel exceli indiriyorum.</em></p>
+
+<p align="center">
+  <a href="Excel/Processed_ExcelCalisma.xlsx" download="Processed_ExcelCalisma.xlsx">
+     <strong>Alt grup zeyil nosu güncellenmiş excel indir</strong>
+  </a>
+</p>
 
 ## Ekran Görüntüleri
 
@@ -24,7 +30,7 @@ ZeylProcessor, sigorta şirketlerinin zeyil kayıtlarında alt grup numaralandı
 
 ZeylProcessor, sigortalı isimlerindeki tekrar eden örüntüleri analiz ederek numaralandırma yapar:
 
-### 📏 Temel Kurallar
+### Temel Kurallar
 
 | Durum | Kural | Örnek |
 |-------|--------|-------|
@@ -69,14 +75,19 @@ ZeylAPI/
 │   ├── ZeylService.cs             # Ana algoritma (desen tespiti)
 │   ├── FileStorageService.cs      # Geçici dosya saklama
 │   └── 📁 Interfaces/             # Servis interface'leri
+│       ├── IExcelService.cs       # Excel servis interface'i
+│       ├── IFileStorageService.cs # Dosya saklama interface'i
+│       └── IZeylService.cs        # Zeyil algoritma interface'i
 ├── 📁 Models/Entities/
 │   └── ZeylRecord.cs              # Zeyil kayıt modeli
 ├── 📁 wwwroot/
-│   ├── 📁 css/zeyil.css          # Custom gradient stilleri
-│   ├── 📁 js/zeyil.js            # Frontend JavaScript
-│   ├── 📁 images/                # Logo ve görseller
+│   ├── 📁 css/
+│   │   └── zeyil.css              # Custom gradient stilleri
+│   ├── 📁 js/
+│   │   └── zeyil.js               # Frontend JavaScript
+│   ├── 📁 images/                 # Logo ve görseller
 │   └── index.html                 # Ana sayfa
-└── Program.cs                     # Uygulama yapılandırması
+└── Program.cs                     # Uygulama yapılandırması                    # Uygulama yapılandırması
 ```
 
 ## Kurulum
