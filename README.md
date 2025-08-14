@@ -62,8 +62,6 @@ Zeyil No | Ana Grup | ALT GRUP ZEYİL NO | Sigortalı
 231      | GRUP-A   | 231-3            | HAYAT KIMYA
 ```
 
-## Özellikler
-
 ## 📁 Proje Yapısı
 
 ```
