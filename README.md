@@ -1,7 +1,7 @@
 # ZeylProcessor
 
 ## Ne İşe Yarar?
-ZeylProcessor, sigorta şirketlerinin zeyil kayıtlarında alt grup numaralandırması yapan akıllı bir sistemdir. Excel dosyalarındaki zeyil kayıtlarını analiz ederek, sigortalı desenlerine göre otomatik numaralandırma yapar.
+ZeylProcessor, sigorta şirketlerinin zeyil kayıtlarında alt grup numaralandırması yapan akıllı bir sistemdir. Excel dosyalarındaki zeyil kayıtlarını analiz ederek, sigortalı desenlerine göre otomatik numaralandırma yapar.Projenin videousu https://drive.google.com/file/d/117nUnxqYbZmrPTl7mQs50RpdQvSch0jE/view?usp=sharing
 
 ## Video
 
