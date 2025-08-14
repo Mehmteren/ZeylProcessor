@@ -31,7 +31,7 @@ ZeylProcessor, sigorta şirketlerinin zeyil (poliçe eki) işlemlerini otomatikl
 ## 🎬 Demo
 
 <p align="center">
-  <img src="gif/gifvid1.gif" alt="ZeylProcessor Demo" width="800" style="border-radius: 10px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
+  <img src="gif/gifvid.gif" alt="ZeylProcessor Demo" width="800" style="border-radius: 10px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
 </p>
 
 <p align="center"><em>Drag & drop ile Excel yükleme, işleme ve indirme süreci</em></p>
@@ -103,25 +103,12 @@ public void ProcessAltGrupNumbers(List<ZeylRecord> records)
 
 ## ✨ Özellikler
 
-### 🖥️ Frontend
-- 🎨 **Modern UI**: Bootstrap 5 + custom gradient tasarım
+- 🎨 **Modern UI**: Bootstrap 5 + gradient tasarım
 - 🖱️ **Drag & Drop**: Dosya sürükle-bırak desteği
-- 📱 **Responsive**: Mobil uyumlu arayüz
-- ⚡ **Real-time**: Anlık durum güncellemeleri
-- 🎭 **Animasyonlar**: Smooth geçiş efektleri
-
-### ⚙️ Backend
-- 📊 **Excel İşleme**: EPPlus ile .xlsx/.xls okuma/yazma
+- 📊 **Excel İşleme**: .xlsx/.xls okuma/yazma
 - 🧠 **Akıllı Algoritma**: Tekrar eden desen tespiti
-- 💾 **Memory Storage**: Thread-safe geçici dosya saklama
-- 🔒 **Güvenli**: Dosya format validasyonu
 - 🚀 **Performans**: Asenkron işleme
-
-### 🔧 API
-- 🌐 **RESTful**: Standard HTTP metodları
-- 📝 **Swagger**: Otomatik API dokümantasyonu
-- 🔄 **CORS**: Cross-origin destek
-- 📋 **Validation**: Dosya format kontrolü
+- 🌐 **RESTful API**: Swagger dokümantasyonu
 
 ## 📁 Proje Yapısı
 
@@ -146,13 +133,6 @@ ZeylAPI/
 
 ## 🚀 Kurulum
 
-### Gereksinimler
-- [.NET 6.0+](https://dotnet.microsoft.com/download)
-- Visual Studio 2022 / Visual Studio Code
-- EPPlus NuGet paketi
-
-### Adımlar
-
 1. **Projeyi klonlayın:**
 ```bash
 git clone https://github.com/username/ZeylProcessor.git
@@ -164,22 +144,14 @@ cd ZeylProcessor
 dotnet restore
 ```
 
-3. **EPPlus lisansını ayarlayın:**
-```csharp
-// Program.cs'de zaten mevcut
-ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
-```
-
-4. **Projeyi çalıştırın:**
+3. **Projeyi çalıştırın:**
 ```bash
 dotnet run
 ```
 
-5. **Uygulamaya erişim:**
-```
-Frontend: http://localhost:5000
-API Docs: http://localhost:5000/swagger
-```
+4. **Erişim:**
+- Frontend: http://localhost:5000
+- API Docs: http://localhost:5000/swagger
 
 ## 📡 API Kullanımı
 
@@ -233,125 +205,27 @@ curl -X GET \
 }
 ```
 
-## 🎨 Frontend
 
-### Teknolojiler
-- **Bootstrap 5.1**: Responsive grid sistem
-- **Inter Font**: Modern tipografi
-- **Bootstrap Icons**: SVG ikonlar
-- **Vanilla JavaScript**: Framework-free JS
-
-### CSS Özellikleri
-```css
-:root {
-    --primary: #c02489;        /* Ana renk */
-    --primary-light: rgba(192, 36, 137, 0.1);
-    --primary-dark: #a71b7e;
-}
-
-/* Gradient kartlar */
-.card-header {
-    background: linear-gradient(to bottom, var(--primary) 0%, #e07bb8 100%);
-}
-
-/* Hover animasyonları */
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
-}
-```
-
-### JavaScript Özellikleri
-- ✅ Drag & drop event handling
-- ✅ Form validation
-- ✅ Async/await API calls
-- ✅ Real-time UI updates
-- ✅ Error handling
 
 ## 🛠️ Teknolojiler
 
-### Backend Stack
-| Kategori | Teknoloji | Versiyon | Kullanım |
-|----------|-----------|----------|----------|
-| **Framework** | ASP.NET Core | 6.0+ | Web API |
-| **Excel** | EPPlus | 6.0+ | Excel okuma/yazma |
-| **DI** | Built-in DI | - | Dependency injection |
-| **API Docs** | Swagger/OpenAPI | 3.0 | API dokümantasyonu |
-
-### Frontend Stack
-| Kategori | Teknoloji | Versiyon | Kullanım |
-|----------|-----------|----------|----------|
-| **CSS Framework** | Bootstrap | 5.1+ | UI komponentleri |
-| **JavaScript** | Vanilla JS | ES6+ | DOM manipülasyonu |
-| **Icons** | Bootstrap Icons | 1.8+ | SVG ikonlar |
-| **Fonts** | Inter | - | Modern tipografi |
-
-### Mimari Desenler
-- 🏗️ **Dependency Injection**: Loose coupling
-- 🔄 **Repository Pattern**: Servis katmanları
-- 📦 **SRP**: Single responsibility principle
-- 🧹 **Clean Code**: Açıklamalı kod yapısı
-
-## 📊 Performans
-
-- **İşlem Hızı**: ~2000 kayıt/saniye
-- **Bellek Kullanımı**: Dosya boyutunun ~2-3 katı
-- **Desteklenen Dosya**: 100MB'a kadar Excel
-- **Eş Zamanlılık**: Thread-safe storage
-- **Browser Desteği**: Modern browsers (Chrome, Firefox, Safari, Edge)
-
-## 🔧 Yapılandırma
-
-### CORS Ayarları
-```csharp
-builder.Services.AddCors(options =>
-{
-    options.AddPolicy("AllowAll", policy =>
-        policy.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
-});
-```
-
-### Dosya Saklama
-```csharp
-// Geçici bellek storage - production'da Redis/Database kullanın
-private readonly ConcurrentDictionary<string, (byte[] data, string fileName)> _storage = new();
-```
+| Backend | Frontend | 
+|---------|----------|
+| ASP.NET Core 6.0+ | Bootstrap 5.1+ |
+| EPPlus | Vanilla JavaScript |
+| Swagger/OpenAPI | Bootstrap Icons |
 
 ## 🤝 Katkıda Bulunma
 
 1. Bu repository'yi fork edin
 2. Feature branch oluşturun (`git checkout -b feature/yeni-ozellik`)
-3. Değişikliklerinizi commit edin (`git commit -am 'Yeni özellik: XYZ eklendi'`)
-4. Branch'inizi push edin (`git push origin feature/yeni-ozellik`)
-5. Pull Request oluşturun
-
-### Kod Standartları
-- ✅ C# 10+ özellikleri kullanın
-- ✅ Async/await pattern'ini takip edin
-- ✅ XML dokümantasyonu ekleyin
-- ✅ Unit testler yazın
+3. Değişikliklerinizi commit edin (`git commit -am 'Yeni özellik eklendi'`)
+4. Pull Request oluşturun
 
 ## 📄 Lisans
 
-Bu proje MIT lisansı altında lisanslanmıştır - detaylar için [LICENSE](LICENSE) dosyasına bakın.
-
-## 🚀 Roadmap
-
-- [ ] **v2.0**: Redis cache desteği
-- [ ] **v2.1**: Bulk processing API
-- [ ] **v2.2**: Role-based authentication
-- [ ] **v2.3**: Audit log sistemi
-- [ ] **v3.0**: Microservices mimarisi
-
-## 📞 İletişim
-
-Sorularınız veya önerileriniz için:
-- 🐛 Bug report: [Issues](https://github.com/username/ZeylProcessor/issues) sayfası
-- 💡 Feature request: Pull request gönderin
-- 📧 Email: your-email@example.com
+Bu proje MIT lisansı altında lisanslanmıştır.
 
 ---
 
 ⭐ **Proje faydalıysa yıldız vermeyi unutmayın!** ⭐
-
-*Bu proje, sigorta sektöründeki manuel süreçleri otomatikleştirerek verimliliği artırmayı hedefler.*
