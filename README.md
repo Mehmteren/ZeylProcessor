@@ -105,3 +105,11 @@ dotnet restore
 ```bash
 dotnet run
 ```
+
+## Kullanılan Teknolojiler
+* **Backend:** .NET 8.0
+* **Frontend:** Bootstrap 5
+* **Excel İşleme:** EPPlus 6.2.10
+* **Versiyon Kontrol:** Git + GitHub
+
+
