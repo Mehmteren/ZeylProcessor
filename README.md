@@ -31,7 +31,7 @@ ZeylProcessor, sigorta şirketlerinin zeyil (poliçe eki) işlemlerini otomatikl
 ## 🎬 Demo
 
 <p align="center">
-  <img src="gif/gifvid.gif" alt="ZeylProcessor Demo" width="800" style="border-radius: 10px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
+  <img src="gif/gifvid1.gif" alt="ZeylProcessor Demo" width="800" style="border-radius: 10px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
 </p>
 
 <p align="center"><em>Drag & drop ile Excel yükleme, işleme ve indirme süreci</em></p>
