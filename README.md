@@ -69,35 +69,6 @@ Zeyil No | Ana Grup | ALT GRUP ZEYİL NO | Sigortalı
 231      | GRUP-A   | 231-3            | HAYAT KIMYA
 ```
 
-### 🔍 Algoritma Adımları
-
-```csharp
-public void ProcessAltGrupNumbers(List<ZeylRecord> records)
-{
-    // 1. Zeyil numarasına göre gruplandır
-    var groups = records.GroupBy(r => r.ZeylNo);
-    
-    foreach (var group in groups)
-    {
-        // 2. Tek kayıt → Alt numara verme
-        if (groupRecords.Count == 1)
-        {
-            groupRecords[0].AltGrupZeylNo = groupRecords[0].ZeylNo;
-            continue;
-        }
-        
-        // 3. Desen tespiti
-        var pattern = DetectPattern(groupRecords);
-        
-        // 4. Numaralandırma
-        if (pattern.Any())
-            AssignPatternBasedNumbers(groupRecords, pattern);
-        else
-            AssignSequentialNumbers(groupRecords);
-    }
-}
-```
-
 ## ✨ Özellikler
 
 - 🎨 **Modern UI**: Bootstrap 5 + gradient tasarım
