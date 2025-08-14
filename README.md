@@ -3,11 +3,6 @@
 ## Ne İşe Yarar?
 ZeylProcessor, sigorta şirketlerinin zeyil (poliçe eki) kayıtlarında alt grup numaralandırması yapan akıllı bir sistemdir. Excel dosyalarındaki zeyil kayıtlarını analiz ederek, sigortalı desenlerine göre otomatik numaralandırma yapar.
 
-[![.NET](https://img.shields.io/badge/.NET-6.0+-512BD4?style=flat&logo=dotnet)](https://dotnet.microsoft.com/)
-[![EPPlus](https://img.shields.io/badge/EPPlus-6.0+-orange)](https://www.epplussoftware.com/)
-[![Bootstrap](https://img.shields.io/badge/Bootstrap-5.1+-7952B3)](https://getbootstrap.com/)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-
 ## Video
 
 <p align="center">
