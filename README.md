@@ -96,5 +96,3 @@ dotnet restore
 ```bash
 dotnet run
 ```
-
-⭐ **Proje faydalıysa yıldız vermeyi unutmayın!** ⭐
