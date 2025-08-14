@@ -7,34 +7,31 @@
 [![Bootstrap](https://img.shields.io/badge/Bootstrap-5.1+-7952B3)](https://getbootstrap.com/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-## 📋 İçindekiler
-- [Ne İşe Yarar?](#ne-işe-yarar)
-- [Demo](#demo)
-- [Algoritma Mantığı](#algoritma-mantığı)
-- [Özellikler](#özellikler)
-- [Proje Yapısı](#proje-yapısı)
-- [Kurulum](#kurulum)
-- [API Kullanımı](#api-kullanımı)
-- [Frontend](#frontend)
-- [Teknolojiler](#teknolojiler)
+## 🎬 Demo
+
+<p align="center">
+  <img src="gif/gifvid1.gif" alt="ZeylProcessor Demo" width="800" style="border-radius: 10px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
+</p>
+
+<p align="center"><em>Drag & drop ile Excel yükleme, işleme ve indirme süreci</em></p>
+
+## 📸 Ekran Görüntüleri
+
+<p align="center">
+  <img src="gif/img11.png" alt="Ana Sayfa" width="250" style="margin: 10px; border-radius: 8px;">
+  <img src="gif/img22.png" alt="Dosya Yükleme" width="250" style="margin: 10px; border-radius: 8px;">
+  <img src="gif/img33.png" alt="Sonuç Ekranı" width="250" style="margin: 10px; border-radius: 8px;">
+</p>
 
 ## 🎯 Ne İşe Yarar?
 
-ZeylProcessor, sigorta şirketlerinin zeyil (poliçe eki) işlemlerini otomatikleştiren full-stack web uygulamasıdır. Drag & drop destekli modern arayüz ile Excel dosyalarını yükler, akıllı algoritma ile işler ve sonuçları anında indirir.
+ZeylProcessor, sigorta şirketlerinin zeyil (poliçe eki) işlemlerini otomatikleştiren web uygulamasıdır. Excel dosyalarını yükler, akıllı algoritma ile işler ve sonuçları indirir.
 
 ### Çözüm Sağladığı Problemler:
 - 🚫 **Manuel Hata Riski**: İnsan kaynaklı numaralandırma hatalarını önler
 - ⚡ **Zaman Kaybı**: Binlerce kayıtlı Excel dosyalarını saniyeler içinde işler
 - 🔄 **Tutarlılık**: Aynı sigortalılar için her zaman aynı alt grup numaralarını atar
 - 🧠 **Desen Tanıma**: Tekrar eden sigortalı dizilimlerini otomatik tespit eder
-
-## 🎬 Demo
-
-<p align="center">
-  <img src="gif/gifvid.gif" alt="ZeylProcessor Demo" width="800" style="border-radius: 10px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
-</p>
-
-<p align="center"><em>Drag & drop ile Excel yükleme, işleme ve indirme süreci</em></p>
 
 ## 🧮 Algoritma Mantığı
 
@@ -204,8 +201,6 @@ curl -X GET \
   "message": "Dosyada veri bulunamadı"
 }
 ```
-
-
 
 ## 🛠️ Teknolojiler
 
