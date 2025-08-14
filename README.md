@@ -18,9 +18,9 @@
 ## 📸 Ekran Görüntüleri
 
 <p align="center">
-  <img src="gif/img11.png" alt="Ana Sayfa" width="450" style="margin: 10px; border-radius: 8px;">
-  <img src="gif/img22.png" alt="Dosya Yükleme" width="450" style="margin: 10px; border-radius: 8px;">
-  <img src="gif/img33.png" alt="Sonuç Ekranı" width="450" style="margin: 10px; border-radius: 8px;">
+  <img src="gif/img11.png" alt="Ana Sayfa" width="500" style="margin: 10px; border-radius: 8px;">
+  <img src="gif/img22.png" alt="Dosya Yükleme" width="500" style="margin: 10px; border-radius: 8px;">
+  <img src="gif/img33.png" alt="Sonuç Ekranı" width="500" style="margin: 10px; border-radius: 8px;">
 </p>
 
 ## 🎯 Ne İşe Yarar?
