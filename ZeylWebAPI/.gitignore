@@ -1,0 +1,30 @@
+# Build results
+bin/
+obj/
+[Dd]ebug/
+[Rr]elease/
+
+# Visual Studio files
+.vs/
+*.user
+*.suo
+*.sln.docstates
+
+# NuGet
+packages/
+*.nupkg
+
+# User-specific files
+*.rsuser
+*.userprefs
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
